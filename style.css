@@ -149,17 +149,25 @@ nav {
 }
 
 .nav__btns {
-    display: none;
+    display: flex;
     align-items: center;
     gap: 5rem;
 }
 
+
 .login__btn {
     color: var(--white);
-    background: var(--gradient-bg);
+    background:#3b82f6;;
     box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
     transition: all 0.3s ease;
     top:40px;
+    white-space: nowrap;     
+    padding: 0.5rem 1.5rem;   
+    font-size: 1rem;
+    border-radius: 50px;    
+    border: none;
+    cursor: pointer;
+    
 }
 
 .login__btn:hover {
