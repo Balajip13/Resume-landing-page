@@ -1,0 +1,275 @@
+:root {
+  --primary-color: #2563eb;
+  --primary-color-dark: #1d4ed8;
+  --secondary-color: #059669;
+  --accent-color: #f59e0b;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --white: #ffffff;
+  --light-bg: #f8fafc;
+  --max-width: 1200px;
+  --header-font: "Bebas Neue", sans-serif;
+  --main-font: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+
+body {
+  background: var(--light-bg);
+  color: var(--text-dark);
+}
+
+.header {
+  background: linear-gradient(135deg, #f1f5f9, #e2e8f0); 
+  color: var(--text-dark);
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header h1 {
+  font-family: var(--header-font);
+  font-size: 3rem;
+  color: #1f2937; 
+}
+
+.header span {
+  color: var(--accent-color);
+}
+
+.company-desc {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.info-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+
+.info-box {
+  flex: 1 1 220px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  color: var(--text-dark);
+  transition: 0.3s ease;
+  background: linear-gradient(135deg, #f1f5f9, #e2e8f0); 
+}
+
+.info-box h4 {
+  font-family: var(--header-font);
+  margin-bottom: 0.5rem;
+  font-size: 1.10rem;
+  letter-spacing: 0.75px;
+  color: #1f2937; 
+}
+
+.info-card {
+  background: var(--white);
+  padding: 1rem;
+  flex: 1 1 200px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-image-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 5rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+}
+
+.contact-form input,
+.contact-form textarea { 
+  margin-bottom: 0.75rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  width:100%
+}
+.contact-form textarea {
+  margin-bottom: 0.75rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.7rem;
+  height: 120px;            
+  resize: none;            
+  font-size: 0.90rem;
+  font-family: var(--main-font);
+  background-color: #ffffff;
+}
+
+.contact-form button {
+  background: var(--secondary-color);
+  color: var(--white);
+  border: none;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.contact-image img {
+  max-width:90%;
+  border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    margin-top: 0.5rem; /* Less space on mobile */
+  }
+}
+
+.contact-row {
+  background-color: rgb(211, 211, 211);
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.contact-col {
+  flex: 1 1 250px;
+  background-color: rgb(211, 211, 211);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.bottom-company-info {
+  background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+  color: var(--text-dark);
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.bottom-company-info h2 {
+  font-family: var(--header-font);
+  font-size: 2rem;
+  letter-spacing: 0.75px;
+  color: #1f2937; 
+}
+
+.bottom-company-info p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #374151; 
+}
+
+.center-info.no-box {
+  background-color: rgb(211, 211, 211); 
+  padding: 0;
+  text-align: left;
+  margin-left: 1.5rem;
+  flex: 1 1 220px;
+}
+
+.center-info p {
+  font-size: 1rem;
+  margin: 0.8rem 0;
+  color: var(--text-dark);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.center-info i {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.2rem; 
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: #333;
+  text-decoration: none; 
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--accent-color);
+}
+
+.subscribe-section {
+  flex: 1 1 250px;
+  background: rgb(211, 211, 211) ;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.subscribe-section h3 {
+  font-family:var(--header-font) ;
+  letter-spacing: 0.75px;
+  font-size: 1.10rem;
+  margin-bottom: 1rem; 
+  background: rgb(211, 211, 211) ;
+}
+
+.subscribe-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  background: rgb(211, 211, 211) ;
+}
+
+.subscribe-section input {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  border-radius: 0.4rem;
+  border: 1px solid #ccc;
+}
+.subscribe-section button {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.footer {
+  text-align: center;
+  background: white ;
+  color: var(--text-dark); 
+  padding: 1rem;
+}
