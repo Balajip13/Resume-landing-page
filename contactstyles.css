@@ -143,7 +143,7 @@ body {
 
 @media (max-width: 768px) {
   .contact-form {
-    margin-top: 0.5rem; /* Less space on mobile */
+    margin-top: 0.5rem; 
   }
 }
 
@@ -188,84 +188,37 @@ body {
   color: #374151; 
 }
 
-.center-info.no-box {
-  background-color: rgb(211, 211, 211); 
-  padding: 0;
-  text-align: left;
-  margin-left: 1.5rem;
-  flex: 1 1 220px;
+.social-follow-section {
+  background-color: #d1d5db; 
+  padding: 2rem;
+  text-align: center;
 }
 
-.center-info p {
-  font-size: 1rem;
-  margin: 0.8rem 0;
-  color: var(--text-dark);
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.center-info i {
-  font-size: 1.2rem;
-  color: black;
+.follow-title {
+  font-family: var(--header-font); 
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937; 
+  margin-bottom: 1rem;
 }
 
 .social-icons {
   display: flex;
-  gap: 1.2rem; 
-  font-size: 1.8rem;
-  margin-top: 1rem;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2rem;
 }
 
 .social-icons a {
-  color: #333;
-  text-decoration: none; 
-  transition: 0.3s ease;
+  color: #1f2937; 
+  text-decoration: none;
+  transition: transform 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: var(--accent-color);
+  transform: scale(1.1);
 }
 
-.subscribe-section {
-  flex: 1 1 250px;
-  background: rgb(211, 211, 211) ;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
-}
-
-.subscribe-section h3 {
-  font-family:var(--header-font) ;
-  letter-spacing: 0.75px;
-  font-size: 1.10rem;
-  margin-bottom: 1rem; 
-  background: rgb(211, 211, 211) ;
-}
-
-.subscribe-section form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  background: rgb(211, 211, 211) ;
-}
-
-.subscribe-section input {
-  padding: 0.5rem;
-  font-size: 0.9rem;
-  border-radius: 0.4rem;
-  border: 1px solid #ccc;
-}
-.subscribe-section button {
-  background-color: var(--secondary-color);
-  color: white;
-  padding: 0.6rem;
-  border: none;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  font-size: 0.95rem;
-}
 
 .footer {
   text-align: center;
