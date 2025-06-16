@@ -1,26 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const newsletterForm = document.querySelector(".subscribe-section form");
 
-  if (newsletterForm) {
-    newsletterForm.addEventListener("submit", (event) => {
-      event.preventDefault();
-
-      const emailInput = newsletterForm.querySelector("input[type='email']");
-      const email = emailInput.value.trim();
-
-      if (!isValidEmail(email)) {
-        alert("Please enter a valid email address.");
-        return;
-      }
-
-      console.log("📬 Newsletter signup:", email);
-      emailInput.value = "";
-      alert("Thanks for signing up for our newsletter!");
+  const followButton = document.querySelector(".follow-btn");
+  if (followButton) {
+    followButton.addEventListener("click", () => {
+      alert("Thanks for following us!");
     });
   }
 
-  function isValidEmail(email) {
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailPattern.test(email);
+  const messageForm = document.querySelector("#contactForm");
+  if (messageForm) {
+    messageForm.addEventListener("submit", function (e) {
+      e.preventDefault(); 
+      const name = messageForm.querySelector('input[name="name"]').value.trim();
+      const mobile = messageForm.querySelector('input[name="mobile"]').value.trim();
+      const email = messageForm.querySelector('input[name="email"]').value.trim();
+      const message = messageForm.querySelector('textarea[name="message"]').value.trim();
+
+      if (name && mobile && email && message) {
+        alert("Message sent successfully!\n\nThank you, " + name + "!");
+        messageForm.reset(); 
+      } else {
+        alert("Please fill in all fields before submitting.");
+      }
+    });
   }
 });
