@@ -8,6 +8,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -42,13 +45,15 @@
       <div class="contact-image">
         <img src="workimage.avif" alt="workingimage" />
       </div>
-      <form id="contact-form" class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="mob" placeholder="Mobile Number" required />
-        <input type="email" placeholder="Email Address" required />
-        <textarea rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+
+      <form class="contact-form" action="submit.php" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="mobile" placeholder="Mobile Number" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
       </form>
+
     </section>
 
     <section class="bottom-company-info">
@@ -58,7 +63,8 @@
         businesses and individuals achieve their professional goals.</p>
     </section>
 
-   <div class="social-follow-section">
+
+<div class="social-follow-section">
   <h2 class="follow-title">Follow Us</h2>
   <div class="social-icons">
     <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
@@ -76,11 +82,11 @@
   </div>
 </div>
 
-
   <footer class="footer">
     <p>&copy;Xoon Infotech and Consulting Pvt Ltd.</p>
   </footer>
 
   <script src="contactscript.js"></script>
+
 </body>
 </html>
