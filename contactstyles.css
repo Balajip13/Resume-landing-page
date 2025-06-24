@@ -128,7 +128,7 @@ body {
 }
 
 .contact-form button {
-  background: var(--secondary-color);
+  background:  #3b82f6;
   color: var(--white);
   border: none;
   padding: 0.75rem;
@@ -182,12 +182,12 @@ body {
   color: #1f2937; 
 }
 
+
 .bottom-company-info p {
   margin-top: 0.5rem;
   font-size: 1rem;
   color: #374151; 
 }
-
 .social-follow-section {
   background-color: #d1d5db; 
   padding: 2rem;
