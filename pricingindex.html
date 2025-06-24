@@ -2,21 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>XOON  Pricing</title>
-  <link rel="stylesheet" href="pricing.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plans & Pricing</title>
+  <link rel="stylesheet" href="pricingstyle.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
-    <h1>Xoon Infotech</h1>
-    <p>Create a resume in minutes.</p>
+    <h3>Professional Resume Plans</h3>
+    <p>Everything you need to create a professional Resume.</p>
   </header>
 
   <section class="pricing">
     <h2>Choose Your Plan</h2>
+
     <div class="cards">
       <div class="card">
         <h3>Basic</h3>
@@ -26,7 +25,7 @@
           <li>Download in PDF</li>
           <li>Email Support</li>
         </ul>
-        <button class="btn" onclick="selectPlan('Basic')">Get Started</button>
+        <button class="btn" onclick="selectPlan('free')">Get Started</button>
       </div>
 
       <div class="card featured">
@@ -37,7 +36,7 @@
           <li>Unlimited Downloads</li>
           <li>Priority Support</li>
         </ul>
-        <button class="btn" onclick="selectPlan('Pro')">Choose Pro</button>
+        <button class="btn" onclick="selectPlan('pro')">Choose Pro</button>
       </div>
 
       <div class="card">
@@ -48,13 +47,15 @@
           <li>AI-Powered Suggestions</li>
           <li>Priority Support</li>
         </ul>
-        <button class="btn" onclick="selectPlan('Premium')">Go Premium</button>
+        <button class="btn" onclick="selectPlan('premium')">Go Premium</button>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <p>©  Xoon Infotech. All rights reserved.</p>
+    <p>© 2025 Xoon. All rights reserved.</p>
   </footer>
+
+  <script src="pricingscript.js"></script>
 </body>
 </html>
