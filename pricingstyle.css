@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff;
+  color: #333;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #f1f5f9, #e2e8f0); 
+}
+
+.header h3{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
+  margin: 0;
+   letter-spacing: 1px; 
+}
+
+.header p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.pricing {
+  text-align: center;
+  padding: 3rem 1rem;
+  
+}
+
+.pricing h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 2px solid black;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  width: 280px;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3 {
+  font-size: 1.6rem;
+  color: #3b82f6;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.card ul li {
+  margin: 0.5rem 0;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  background: #3b82f6;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f9fafb;
+  font-size: 0.9rem;
+  color: #555;
+}
