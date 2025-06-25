@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment</title>
+  <link rel="stylesheet" href="paymentstyle.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Complete Your Payment</h1>
+    <div class="payment-box">
+      <form id="paymentForm">
+        <label for="method">Select Payment Method</label>
+        <select id="method" onchange="showFields()" required>
+          <option value="">Choose Method </option>
+          <option value="upi">UPI</option>
+          <option value="card">Credit / Debit Card</option>
+          <option value="netbanking">Net Banking</option>
+        </select>
+
+        <div class="payment-section" id="upiSection">
+          <label for="upi">UPI ID</label>
+          <input type="text" id="upi" placeholder="example@upi" />
+        </div>
+
+        <div class="payment-section" id="cardSection">
+          <label for="name">Cardholder Name</label>
+          <input type="text" id="name" placeholder="John Doe" />
+
+          <label for="number">Card Number</label>
+          <input type="text" id="number" placeholder="XXXX-XXXX-XXXX-XXXX" />
+
+          <div class="row">
+            <div class="half">
+              <label for="expiry">Expiry Date</label>
+              <input type="month" id="expiry" />
+            </div>
+            <div class="half">
+              <label for="cvv">CVV</label>
+              <input type="password" id="cvv" placeholder="123" />
+            </div>
+          </div>
+        </div>
+
+        <div class="payment-section" id="netbankingSection">
+          <label for="bank">Select Your Bank</label>
+          <select id="bank">
+            <option value="">-- Select Bank --</option>
+            <option value="sbi">SBI</option>
+            <option value="hdfc">HDFC</option>
+            <option value="icici">ICICI</option>
+            <option value="axis">Axis Bank</option>
+            <option value="axis">Indian Bank</option>
+          </select>
+        </div>
+
+        <button type="submit">Pay Now</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="paymentscript.js"></script>
+</body>
+</html>
