@@ -28,7 +28,6 @@ body {
 .pricing {
   text-align: center;
   padding: 3rem 1rem;
-  
 }
 
 .pricing h2 {
@@ -39,10 +38,9 @@ body {
 
 .cards {
   display: flex;
+  flex-wrap: wrap;            
   justify-content: center;
   gap: 2rem;
-  flex-wrap: nowrap;
-  overflow-x: auto;
   padding: 1rem;
 }
 
