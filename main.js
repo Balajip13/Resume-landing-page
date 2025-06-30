@@ -182,3 +182,18 @@ const handleNavTheme = () => {
 themeToggle.addEventListener('click', () => {
     setTimeout(handleNavTheme, 100);
 });
+
+
+document.querySelectorAll(".faq__question").forEach((button) => {
+  button.addEventListener("click", () => {
+    const faqItems = document.querySelectorAll(".faq__item");
+
+    faqItems.forEach((item) => {
+      if (item !== button.parentElement) {
+        item.classList.remove("open");
+      }
+    });
+    button.parentElement.classList.toggle("open");
+  });
+});
+
